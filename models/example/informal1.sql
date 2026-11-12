@@ -1,0 +1,1 @@
+select * from RETAIL_DB.RAW.CUSTOMERS_RAW;

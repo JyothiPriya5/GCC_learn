@@ -1,0 +1,15 @@
+my_project_profile:  # Profile name (matches dbt_project.yml)
+  target: dev  # Default target to use
+  outputs:
+    dev: # Development environment
+      type: snowflake # Required: snowflake, bigquery, databricks, redshift, postgres, etc
+      # Connection identifiers (placeholder examples, see adapter-specific pages for supported configs)
+      account: DBT_SNOWFLAKE_ACCNAME
+      database: dbtlearn
+      schema: dbtinformal     
+      # Authentication (adapter-specific)
+      auth_method: username_password  
+      username: Priya
+      password_credentials: DBT_SNOWFLAKE_PWD
+      # Execution settings (common across adapters)
+      threads: 4   # Number of parallel threads
