@@ -1,2 +1,1 @@
-
-SELECT * FROM CUSTOMERS2
+SELECT * FROM {{source('retail','CUSTOMERS2') }}
