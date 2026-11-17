@@ -5,6 +5,10 @@ models:
   - name: informal2
     description: "Staging model for customer data"
 
+    config:
+      tags:
+        - CUSTOMERS2
+
     columns:
       - name: first_name
         description: "Customer's first name"
