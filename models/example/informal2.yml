@@ -1,0 +1,56 @@
+
+version: 2
+
+models:
+  - name: informal2
+    description: "Staging model for customer data"
+
+    columns:
+      - name: first_name
+        description: "Customer's first name"
+        data_tests:
+          - not_null
+
+      - name: last_name
+        description: "Customer's last name"
+        data_tests:
+          - not_null
+
+      - name: email
+        description: "Customer's email address"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: phone
+        description: "Customer's phone number"
+        data_tests:
+          - not_null
+
+      - name: city
+        description: "Customer's city"
+        data_tests:
+          - not_null
+
+      - name: state
+        description: "Customer's state"
+        data_tests:
+          - not_null
+
+      - name: country
+        description: "Customer's country"
+        data_tests:
+          - not_null
+
+      - name: created_at
+        description: "Record creation timestamp"
+        data_tests:
+          - not_null
+
+      - name: updated_at
+        description: "Record last updated timestamp"
+
+      - name: source_system
+        description: "Source system of customer record"
+        data_tests:
+          - not_null
