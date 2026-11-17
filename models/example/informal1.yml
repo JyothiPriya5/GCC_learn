@@ -4,6 +4,10 @@ version: 2
 models:
   - name: informal1
     description: "Staging model for customer data"
+    
+    config:
+      tags:
+        - CUSTOMERS2
 
     columns:
       - name: first_name
