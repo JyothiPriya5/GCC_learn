@@ -1,1 +1,2 @@
-select * from RETAIL_DB.RAW.CUSTOMERS_RAW;
+SELECT *
+FROM {{ source('retail', 'customers_raw') }}
